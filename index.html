@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Framework7</title>
+<title>Sneakers App</title>
 <link href="css/framework7.bundle.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -16,22 +16,22 @@
 			
 		
 		<div class="view view-main view-init">
-        
+        			
 			<section class="panel panel-left panel-cover">
-				
-				<div class="block">
+			
+				<div id="panel-user">
 					<div class="row">
 						<article class="col-30">
-							<img src="https://placehold.co/600x600" alt="" class="img-fluid">
+							<img src="img/customer-head-2.png" alt="" class="img-fluid">
 						</article>
 						<article class="col-70">
 							<h4>Violet Norman</h4>
-							violet@gmail.com
+							<p class="text-small text-overflow">violetnorman@gmail.com</p>
 						</article>
 					</div>
 				</div>
-				
-				<div class="block">
+			
+				<div id="panel-menu" class="block">
 				
 					<div class="list media-list">
 						<ul>
@@ -48,20 +48,10 @@
 							<li>
 								<a href="/collections/" class="item-link item-content panel-close">
 									<div class="item-media">
-										<i class="material-icons">grid_view</i>
+										<i class="material-icons">shopping_cart</i>
 									</div>	
 									<div class="item-inner">
-										<div class="item-title">New Collections</div>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="item-link item-content panel-close">
-									<div class="item-media">
-										<i class="material-icons">image</i>
-									</div>	
-									<div class="item-inner">
-										<div class="item-title">Editor Pick's</div>
+										<div class="item-title">Shop</div>
 									</div>
 								</a>
 							</li>
@@ -71,17 +61,17 @@
 										<i class="material-icons">local_offer</i>
 									</div>	
 									<div class="item-inner">
-										<div class="item-title">Top Deals</div>
+										<div class="item-title">Sales</div>
 									</div>
 								</a>
 							</li>
 							<li>
 								<a href="#" class="item-link item-content panel-close">
 									<div class="item-media">
-										<i class="material-icons">notifications</i>
+										<i class="material-icons">view_column</i>
 									</div>	
 									<div class="item-inner">
-										<div class="item-title">Notifications</div>
+										<div class="item-title">Brands</div>
 									</div>
 								</a>
 							</li>
@@ -95,15 +85,22 @@
 									</div>
 								</a>
 							</li>
+							<li>
+								<a href="#" class="item-link item-content panel-close">
+									<div class="item-media">
+										<i class="material-icons">settings</i>
+									</div>	
+									<div class="item-inner">
+										<div class="item-title">Settings</div>
+									</div>
+								</a>
+							</li>
 						</ul>				
 					</div>
 				
-				</div>
-				
+				</div>				
 				
 			</section>
-			
-			
 			
 			<section data-name="home" class="page">
 
@@ -111,7 +108,7 @@
 			  <nav class="navbar">
 				<div class="navbar-bg"></div>
 				<div class="navbar-inner">
-				  	<div class="title">App</div>
+				  	<div class="title">Sneakers APP</div>
 					<div class="right">
 						<a href="#" class="link panel-open" data-panel="left">
 							<i class="material-icons">menu</i>
@@ -121,169 +118,170 @@
 			  </nav>
 
 
-			  <section class="page-content">
-				  
-				  <div id="home-top">
-				  
-					  <div class="swiper-container swiper-init" data-speed="400" data-space-between="40" data-slides-per-view="1" data-pagination='{"el": ".swiper-pagination"}'>
-						<div class="swiper-pagination"></div>
-						  
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<h2>Free Shippping in November</h2>
-							</div>
-							<div class="swiper-slide">
-								<h2>Free Shippping in July</h2>
-							</div>
-							<div class="swiper-slide">
-								<h2>Free Shippping in December</h2>
-							</div>
-						</div>
-					</div>					  
-				  
-				  </div>
-				  
-				  <h2 class="block-title">Post Popular</h2>
-				  <div id="block-popular" class="block">
-				  
-					  <div class="swiper-container swiper-init" data-speed="400" data-space-between="10" data-slides-per-view="2" data-centered-slides="true">
-						<div class="swiper-pagination"></div>
-						  
+			<section class="page-content">
+
+				<div id="intro" class="block bg-theme-color">
+					<div class="row">
+						<article class="col">
+							<h3 class="texto-mediano">Save 25%</h3>
+							<p>Enjoy flash sale, and save up to 100$</p>
+							<a href="#" class="button button-fill button-white">Shop Now</a>
+						</article>
+						<article class="col">
+							<img src="img/flyknit-1.png" alt="" class="img-fluid">
+						</article>
+					</div>
+				</div>
+				
+				
+				<div class="row row-title">
+					<article class="col-70">
+						<h2 class="block-title no-margin-top">Top Brands</h2>
+					</article>
+					<article class="col-30">
+						<a href="/nike/" class="link">See more</a>
+					</article>
+				</div>
+				
+				<div id="brands" class="block">
+				
+					<div class="swiper-container swiper-init" data-speed="400" data-space-between="0" data-slides-per-view="3" data-centered-slides="true">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<article class="card">
-									<div class="card-content">
-										<img src="https://picsum.photos/200/200" alt="" class="img-fluid">
-										<div class="info">
-											<h4 class="title-movie">G.I. Joe</h4>
-											<p class="time-movie">01:30 mins</p>
-										</div>										
-									</div>
+									<a href="/nike/">
+										<div class="card-content">
+											<img src="img/adidas.png" alt="" class="img-fluid">
+										</div>
+									</a>						
 								</article>
 							</div>
 							<div class="swiper-slide">
 								<article class="card">
-									<div class="card-content">
-										<img src="https://picsum.photos/200/200" alt="" class="img-fluid">
-										<div class="info">
-											<h4 class="title-movie">Die Hard</h4>
-											<p class="time-movie">01:30 mins</p>
-										</div>	
-									</div>
+									<a href="/nike/">
+										<div class="card-content">
+											<img src="img/nike.jpg" alt="" class="img-fluid">
+										</div>
+									</a>						
 								</article>
 							</div>
 							<div class="swiper-slide">
 								<article class="card">
-									<div class="card-content">
-										<img src="https://picsum.photos/200/200" alt="" class="img-fluid">
-										<div class="info">
-											<h4 class="title-movie">Olympus Fallen</h4>
-											<p class="time-movie">01:30 mins</p>
-										</div>	
-									</div>
+									<a href="#">
+										<div class="card-content">
+											<img src="img/puma.png" alt="" class="img-fluid">
+										</div>
+									</a>						
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="card">
+									<a href="#">
+										<div class="card-content">
+											<img src="img/asics.png" alt="" class="img-fluid">
+										</div>
+									</a>						
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="card">
+									<a href="#">
+										<div class="card-content">
+											<img src="img/reebok.png" alt="" class="img-fluid">
+										</div>
+									</a>						
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="card">
+									<a href="#">
+										<div class="card-content">
+											<img src="img/adidas.png" alt="" class="img-fluid">
+										</div>
+									</a>						
 								</article>
 							</div>
 						</div>
 					</div>
-					  
-				  
-				  </div>
-				  
-				  
-				  <div class="row">
-				  	  <article class="col-70">
-					  	<h2 class="block-title no-margin-top">Most Recent</h2>
-					  </article>
-					  <article class="col-30">
-					  	<a href="/collections/" class="link">View more</a>
-					  </article>
-				  </div>
-				  
-				  <div id="block-recent" class="block">
-				  
-					  <div class="swiper-container swiper-init" data-speed="400" data-space-between="10" data-slides-per-view="2">
-						<div class="swiper-pagination"></div>
-						  
+					
+				</div>
+				
+				<div class="row row-title">
+					<article class="col-70">
+						<h2 class="block-title no-margin-top">Offers & Deals</h2>
+					</article>
+					<article class="col-30">
+						<a href="#" class="link">See more</a>
+					</article>
+				</div>
+				
+				<div id="offers" class="block">
+					<div class="swiper-container swiper-init" data-speed="400" data-space-between="0" data-slides-per-view="2" data-centered-slides="false">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<article class="card">
+							<div class="swiper-slide">								
+								<article class="card nike">
 									<div class="card-content">
-										<img src="https://picsum.photos/200/200" alt="" class="img-fluid">
-										<div class="info">
-											<h4 class="title-movie">G.I. Joe</h4>
-											<p class="time-movie">01:30 mins</p>
-										</div>										
+										<div class="position-relative">
+											<img src="img/kids-basketball.jpg" alt="" class="img-fluid">
+											<div class="card-overlay"></div>
+											<div class="card-texto">
+												<h4>Nike Offers</h4>
+												<h3>50%</h3>					
+											</div>		
+											<div class="card-icon">
+												<p><i class="material-icons">star</i>4.8</p>
+											</div>
+										</div>
+
 									</div>
-								</article>
-							</div>
-							<div class="swiper-slide">
-								<article class="card">
+								</article>							
+							</div><!-- /slide-->
+						
+							<div class="swiper-slide">								
+								<article class="card nike">
 									<div class="card-content">
-										<img src="https://picsum.photos/200/200" alt="" class="img-fluid">
-										<div class="info">
-											<h4 class="title-movie">Die Hard</h4>
-											<p class="time-movie">01:30 mins</p>
-										</div>	
+										<div class="position-relative">
+											<img src="img/kids-running.jpg" alt="" class="img-fluid">
+											<div class="card-overlay"></div>
+											<div class="card-texto">
+												<h4>Nike Running</h4>
+												<h3>30%</h3>					
+											</div>			
+											<div class="card-icon">
+												<p><i class="material-icons">star</i>4.8</p>
+											</div>
+										</div>
+
 									</div>
-								</article>
-							</div>
-							<div class="swiper-slide">
-								<article class="card">
+								</article>							
+							</div><!-- /slide-->
+							
+							<div class="swiper-slide">								
+								<article class="card nike">
 									<div class="card-content">
-										<img src="https://picsum.photos/200/200" alt="" class="img-fluid">
-										<div class="info">
-											<h4 class="title-movie">Olympus Fallen</h4>
-											<p class="time-movie">01:30 mins</p>
-										</div>	
+										<div class="position-relative">
+											<img src="img/kids-soccer.jpg" alt="" class="img-fluid">
+											<div class="card-overlay"></div>
+											<div class="card-texto">
+												<h4>Adidas Soccer</h4>
+												<h3>25%</h3>
+											</div>		
+											<div class="card-icon">
+												<p><i class="material-icons">star</i>4.8</p>
+											</div>
+										</div>
+
 									</div>
-								</article>
-							</div>
+								</article>							
+							</div><!-- /slide-->
+							
 						</div>
 					</div>
-					  
-				  
-				  </div>
-				  
-				  <!--
-				  <h2 class="block-title block-title-medium">Título del Block</h2>
-				  <div class="block">
-				  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi molestias esse, recusandae, eos tempore deleniti? Quidem quae similique blanditiis delectus laborum fugit iusto vitae modi aliquid optio harum hic impedit ad, aut natus quam nulla, dicta, ut sunt nobis recusandae? Officiis provident, nesciunt voluptatibus repellat deserunt. Error possimus, asperiores.
-				  </div>
-				  
-				  <h2 class="block-title">Block con Strong</h2>
-				  <div class="block block-strong">
-				  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint omnis, dignissimos aspernatur quisquam praesentium, possimus officiis voluptate alias nihil nostrum dolore! Saepe tempora aspernatur harum necessitatibus perferendis amet, tenetur reprehenderit.
-				  </div>
-				  
-				  <h2 class="block-title">Diseño de Grid</h2>
-				  <div class="block">
-				  	
-					  <div class="row">
-					  	  <article class="col-20">
-						  	Contenido Izquierdo
-						  </article>
-						  <article class="col-30">
-						  	Contenido Centro
-						  </article>
-						  <article class="col-50">
-						  	Contenido Derecho
-							  <div class="row">
-							  	  <article class="col">
-								  	D1
-								  </article>
-								  <article class="col">
-								  	D2
-								  </article>
-							  </div>
-						  </article>
-					  </div>
-					  
-				  
-				  </div>
-				  -->
-				  
-				  
-			  </section> <!--/page-content -->
+					
+				</div>
+				
+
+			</section> <!--/page-content -->
 
 			</section> <!--/page -->
 			
@@ -293,16 +291,21 @@
 						<i class="material-icons">home</i>
 						<span class="tabbar-label">Home</span>
 					</a>
-					<a href="#" class="tab-link">
-						<i class="material-icons">shopping_bag</i>
-						<span class="tabbar-label">Cart</span>
-					</a>
 					<a href="/collections/" class="tab-link">
 						<i class="material-icons">favorite</i>
 						<span class="tabbar-label">Favorites</span>
 					</a>
+					<a href="/collections/" class="tab-link">
+						<i class="material-icons">notifications</i>
+						<span class="tabbar-label">Notifications</span>
+					</a>
 					<a href="#" class="tab-link">
-						<i class="material-icons">account_circle</i>
+						<i class="material-icons">shopping_cart</i>
+						<span class="tabbar-label">Cart</span>
+					</a>
+					
+					<a href="#" class="tab-link">
+						<i class="material-icons">person</i>
 						<span class="tabbar-label">Profile</span>
 					</a>
 				</div>

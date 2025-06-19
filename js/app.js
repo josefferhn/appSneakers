@@ -11,7 +11,7 @@ var app = new Framework7({
     },
 	cache:false,
 	cacheDuration: 0,
-	modalTitle: 'App Framework7',
+	modalTitle: 'Sneakers',
 	panel: {
 		swipe: true,
 	},
@@ -22,14 +22,14 @@ var app = new Framework7({
     	name: 'home',
   		},
 		{
-		path: '/collections/',
-    	url: 'collections.html',
-    	name: 'collections',
+		path: '/nike/',
+    	url: 'nike.html',
+    	name: 'nike',
   		}
 		
 	],
 	dialog: {
-		title: 'Diseño Web App',
+		title: 'Sneakers App',
 		buttonOk: 'Aceptar',
   	},
 	popup: {
