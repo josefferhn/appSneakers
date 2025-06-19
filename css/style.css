@@ -1,0 +1,72 @@
+:root{
+	--f7-theme-color:#5079FE;
+	--f7-navbar-bg-color: #000; /*navbar*/
+	--f7-navbar-link-color: #FFF; /*navbar link*/
+	--f7-navbar-text-color:#FFF;
+	--f7-bars-bg-color:#000;/*toolbar*/
+	--f7-tabbar-link-inactive-color: #FFF; /*link toolbar*/
+	--f7-block-margin-vertical:20px;
+	--f7-card-footer-border-color:transparent; 
+	--f7-tabbar-label-font-size:12px;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 3px;
+}
+.block-title{
+	color: #000;
+	font-weight: 600;
+}
+
+
+.img-fluid{
+	max-width: 100%;
+}
+
+#home-top{
+	background-image: url('https://picsum.photos/seed/picsum/600/400');
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+	background-color: rgba(0,0,0,0.60);
+	background-blend-mode: multiply;
+}
+
+#home-top .swiper-slide{
+	height: 200px;
+	display: grid;
+	align-content: center;
+	text-align: center;
+	color: #fff;
+}
+
+#block-popular .card .info{
+	padding: 10px 20px;
+}
+
+.title-movie{
+	font-size: 16px;
+}
+.time-movie{
+	color: #aaa;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
